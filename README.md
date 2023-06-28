@@ -2,6 +2,8 @@
 
 The NXP's MCUXpresso for VS Code extension makes NXP devices (based on ARM Cortex-M cores) easy to use right from Microsoft Visual Studio Code environment.
 
+For complete details follow the [wiki](https://github.com/nxp-mcuxpresso/vscode-for-mcux/wiki) section.
+
 ## Overview:
 
 * Support MCUXpresso SDK, Zephyr and Open-CMSIS-Pack software repositories integration.

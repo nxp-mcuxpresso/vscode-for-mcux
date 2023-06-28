@@ -3,6 +3,7 @@
 ## Debug
 
 * The program execution does not stop at main when entering into debug mode.
+    **Workaround** Manually place a breakpoint in main() function then start the debug session.
 
 * Debugging and flashing Zephyr projects with LinkServer or PEmicro probes requires manual modifications of the .vscode/mcuxpresso-tools.json file. This is due to missing support for LinkServer device names in Zephyr environment.
     
@@ -53,6 +54,9 @@
     endif()
     ```
 
+* [Flash Programmer GUI] Error when flashing unbuilt project.\
+    **Workaround** Build the project then retry the operation in Flash Programmer GUI.
+
 ## Project Importer
 
 * MCUXpresso IDE projects built with redlib library type will not be converted.\
@@ -65,3 +69,6 @@
 ## Views
 
 * [Projects View] For Zephyr projects, the Memory node is not showing any data.
+
+* [guiconfig] Kernel Configuration is not displayed correctly on MacOS using an older Python version.\
+    **Workaround** This can be avoided if users having Python 3.9.x will update their version to 3.9.8 or newer.
