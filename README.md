@@ -11,6 +11,7 @@ For complete details follow the [wiki](https://github.com/nxp-mcuxpresso/vscode-
 * Wizard view to import repository from remote or local GitHub or from a standalone archive (MCUXpresso SDK).
 * Wizard to import a project example from an installed repository.
 * Support for importing all application types for Zephyr (repository, workspace, freestanding).
+* Integration with standalone MCUXpresso Config Tools.
 * Option to import an existing CMake project.
 * Project converter from MCUXpresso IDE (Eclipse) to MCUXpresso for VS Code extension. 
 * Project view displaying information about: software repository, build configurations, MCU device and memory details.

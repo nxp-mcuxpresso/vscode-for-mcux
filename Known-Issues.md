@@ -2,33 +2,18 @@
 
 ## Debug
 
-* The program execution does not stop at main when entering into debug mode.
-    **Workaround** Manually place a breakpoint in main() function then start the debug session.
-
-* Debugging and flashing Zephyr projects with LinkServer or PEmicro probes requires manual modifications of the .vscode/mcuxpresso-tools.json file. This is due to missing support for LinkServer device names in Zephyr environment.
-    
-    LinkServer: 
+* For older created projects, due to newest toolchain (12.x) update, starting a debug session might be very slow.\
+   **Workaround** Add the following option to your launch.json file:
     ```
-    Update device/core target names in "Project -> .vscode -> mcuxpresso-tools.json -> debug -> linkserver" using the following steps for a generic target "X":
-        - go to `<LinkServer_layout>`
-        - issue command: `LinkServer.exe devices -f X`
-        - select the desired `<Device>:<Board>` peer from `Device` and `Board` columns and use it for `device` field
-        - select the desired core from `Cores` column and use it for `core` field
-        - Note. "primary" can be used for `core` field as an alias for the primary core.
-    Hint: For more details on LinkServer command usage check the `<LinkServer_layout>/Readme.md`.
-
-    Example for LPC55S69: `"device": "LPC55S69:LPCXpresso55S69"` and `"core": "cm33_core0"`.
-    ```
-    PEmicro:
-    ```
-    Update device/core target names in "Project -> .vscode -> mcuxpresso-tools.json -> debug -> pemicro" using the following steps:
-        - go to `<PEmicro_layout>`
-        - issue command: `pegdbserver_console.exe -deviceList`
-        - select the desired device and use it for `device` field
+    "setupCommands": [
+        {
+          "text": "set debug-file-directory"
+        }
+    ]
     ```
 
-* [macOS | Linux] Unable to start debug session on consecutive quick attempts using LinkServer debug probe.\
-    **Workaround**: wait for ~1 min (connection socket timeout) and retry.
+* The program execution sometimes stops before main when starting debug session.\
+    **Workaround** Resume application, it will then stop at main.
 
 * Semihosting support might not work for older SDK versions. If this is the case, please check mcux_config.cmake file inside your SDK (for standalone SDK in: tools/cmake_toolchain_files, for GitHub SDK in core/tools/cmake_toolchain_files) and:
     - remove --specs=rdimon.specs (remove _"set(SPECS "--specs=rdimon.specs" PARENT_SCOPE)"_ line)
@@ -54,21 +39,13 @@
     endif()
     ```
 
-* [Flash Programmer GUI] Error when flashing unbuilt project.\
-    **Workaround** Build the project then retry the operation in Flash Programmer GUI.
-
 ## Project Importer
 
-* MCUXpresso IDE projects built with redlib library type will not be converted.\
+* Conversion for MCUXpresso IDE projects built with redlib library type is not supported.\
     **Workaround**: Switch MCUXpresso IDE project to Newlib or Newlib_nano library types then rebuild inside IDE. The project can be then converted.
 
-* Import does not work for standalone multicore or trustzone example projects downloaded from mcuxpresso.nxp.com.
-
-* Some projects imported from MCUXpresso SDKs might not build. This is due to missing component sources that are located outside example directory, so these are not cloned.
+* Conversion for MCUXpresso IDE projects for static libraries is not supported.
 
 ## Views
 
 * [Projects View] For Zephyr projects, the Memory node is not showing any data.
-
-* [guiconfig] Kernel Configuration is not displayed correctly on MacOS using an older Python version.\
-    **Workaround** This can be avoided if users having Python 3.9.x will update their version to 3.9.8 or newer.
