@@ -44,8 +44,6 @@
 * Conversion for MCUXpresso IDE projects built with redlib library type is not supported.\
     **Workaround**: Switch MCUXpresso IDE project to Newlib or Newlib_nano library types then rebuild inside IDE. The project can be then converted.
 
-* Conversion for MCUXpresso IDE projects for static libraries is not supported.
-
 ## Views
 
-* [Projects View] For Zephyr projects, the Memory node is not showing any data.
+* [Projects View] For Zephyr and Open-CMSIS projects, the Memory node is not showing any data.
