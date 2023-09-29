@@ -21,13 +21,14 @@ For complete details follow the [wiki](https://github.com/nxp-mcuxpresso/vscode-
 * Integrated with existing VS Code support for managing files, editing facilities, source control.
 * Detailed analysis of an application image structure (Callgraph and Memory details inside Image Info viewer).
 * Various binary utilities (to create bin, hex or S-Record type of images, executable information) accessible right from the context menu of executable files.
-* Single core [ARM Cortex-M] debug support relying on Microsoft's "C/C++" extension debug support.
-* Debug support for J-Link, LinkServer and PEmicro debug probes with detection for available connected devices.
+* Single/multi core [ARM Cortex-M] debug support relying on Microsoft's "C/C++" extension.
+* Debug support for J-Link, LinkServer and PEmicro probes with detection for available connected devices.
 * Support for LPC, Kinetis microcontrollers and i.MX RT crossover processors.
 * Dedicated Flash Programmer GUI.
 * Baremetal Heap and Stack debug viewer.
 * Integration with "Serial Monitor" extension for UART and semihosting console support.
 * Quickstart panel view with quick access to various operations, including import project, flash programmer interface, links to documentation.
+* Integration with NXP Application Code Hub.
 * Support for Windows, Ubuntu and macOS.
 
 ## Changelog

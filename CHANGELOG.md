@@ -1,5 +1,31 @@
 # MCUXpresso for VS Code Changelog
 
+## Version 1.2 (2023.09)
+
+<h3>General</h3>
+
+- Added "Application Code Hub" view, integrating [NXP Application Code Hub](https://mcuxpresso.nxp.com/appcodehub) with support for listing available repositories, filtering, documentation preview and cloning. A project import facility will be added in a future release.
+- Local folder prompt selection now defaults to the HOME folder.
+
+<h3>Project Management</h3>
+
+- Added "Settings" node in project view that lists all configuration files (.vscode directory content).
+
+<h3>Open-CMSIS-Pack</h3>
+
+- Imported project now maintains the origin (ID and version) of the source pack.
+- Installed repositories groups all the versions of the same packs under the same entry.
+- Pack information can be now be updated via the Refresh button.
+
+<h3>Eclipse Project Converter</h3>
+
+- Support importing projects with linked sources.
+
+<h3>Debugger</h3>
+
+- Added support for Flash Programmer and multicore for PEmicro probes.
+- Added debug option to use JTAG on J-Link probes (debug.segger.interface option in .vscode/mcuxpresso-tools.json).
+
 ## Version 1.1 (2023.08)
 
 <h3>General</h3>
