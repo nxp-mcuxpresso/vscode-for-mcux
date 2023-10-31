@@ -13,6 +13,7 @@ For complete details follow the [wiki](https://github.com/nxp-mcuxpresso/vscode-
 * Support for importing all application types for Zephyr (repository, workspace, freestanding).
 * Integration with standalone MCUXpresso Config Tools.
 * Option to import an existing CMake project.
+* Support for importing existing executables.
 * Project converter from MCUXpresso IDE (Eclipse) to MCUXpresso for VS Code extension. 
 * Project view displaying information about: software repository, build configurations, MCU device and memory details.
 * Project options to manage components, build, flash and debug.

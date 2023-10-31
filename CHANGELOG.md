@@ -1,5 +1,33 @@
 # MCUXpresso for VS Code Changelog
 
+## Version 1.3 (2023.10)
+
+<h3>Project Management</h3>
+
+- Added support for importing existing executables (.elf).
+- Changed the 'build' icon action.
+
+<h3>Eclipse Project Converter</h3>
+
+- Automatically handling MCUXpresso SDK linkage when no default SDK is available at conversion.
+
+<h3>Repository Integration</h3>
+
+- Import repository now supports cloning from an HTTPS that requires authentication.
+
+<h3>Zephyr</h3>
+
+- Copy the entire project folder when creating a workspace/freestanding application. This prevents build failure due to missing files located outside of the source directory.
+
+<h3>Open-CMSIS-Pack</h3>
+
+- Update repository now lists all installed packs that have a newer version available online.
+- Properly configure svd file in launch.json (for Peripheral View support).
+
+<h3>MCUXpresso SDK</h3>
+
+- Extended display for targets not previously listed for GitHub SDK (FRDM-K64F, LPCXpresso55S36, etc.). In order to benefit on this update, a new clone of GitHub is required.
+
 ## Version 1.2 (2023.09)
 
 <h3>General</h3>
