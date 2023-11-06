@@ -1,5 +1,20 @@
 # MCUXpresso for VS Code Changelog
 
+## Version 1.3.59 hotfix
+
+<h3>MCUXpresso Installer Integration</h3>
+
+- Quickstart Panel -> Open MCUXpresso Installer now prompts you to install the latest version in case your local Installer version is 1.0 or older. This aims to fix an Installer issue when updating to version 1.1. 
+- Quickstart Panel -> Open MCUXpresso Installer is now able to download and install on macOS and Linux.
+
+<h3>Open-CMSIS-Pack</h3>
+
+- Fails to launch debug session on some single-core device targets.
+
+<h3>Zephyr</h3>
+
+- Error thrown when you want to create another application type after creating a "Repository Application" using the same template example.
+
 ## Version 1.3 (2023.10)
 
 <h3>Project Management</h3>
