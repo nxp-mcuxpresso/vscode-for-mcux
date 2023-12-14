@@ -1,5 +1,37 @@
 # MCUXpresso for VS Code Changelog
 
+## Version 1.4 (2023.11)
+
+<h3>Project Management</h3>
+
+- Projects view now indicates origin repository type and version in line with project name.
+- Added possibility to change the toolchain for a project (project context menu -> Configure -> Associate Toolchain).
+- Paths specified in project settings (i.e. "toolchainPath" and "sdk.path" options from mcuxpresso-tools.json file) can now be defined using variables (userHome, workspaceFolder, workspaceFolderBasename, pathSeparator).
+- Changed to CLRF on Windows for ide_overrides.cmake generated file.
+
+<h3>Eclipse Project Converter</h3>
+
+- Fixed wrong repository information displayed when no SDK is associated with the project.
+- Fixed missing sources in a special case of excluded directories from Eclipse project. 
+
+<h3>Zephyr</h3>
+
+- Device and core are automatically determined when debugging a Zephyr project with LinkServer debug probe.
+- Applications can now be debugged from SDRAM (added SEGGER resetAfterLoad debug option. When this option is not provided, a reset is only sent if it can be determined that the project is in flash).
+
+<h3>MCUXpresso SDK</h3>
+
+- Fixed error reported when importing a local archive with very long paths.
+- Importing an SDK archive will no longer be removed in case of Git error.
+
+<h3>Analysis Tools</h3>
+
+- Image Info now displays sections and symbols in Memory tree even if no map file is available.
+
+<h3>Debugger</h3>
+
+- Added offline peripherals view (open by default). SVD files can be loaded and inspected without an active debug session.
+
 ## Version 1.3.59 hotfix
 
 <h3>MCUXpresso Installer Integration</h3>
