@@ -7,6 +7,7 @@ For complete details follow the [wiki](https://github.com/nxp-mcuxpresso/vscode-
 ## Overview:
 
 * Support MCUXpresso SDK, Zephyr and Open-CMSIS-Pack software repositories integration.
+* Integration with [MCUXPresso SDK builder](https://mcuxpresso.nxp.com).
 * Dependency tools and software components can be installed using [MCUXpresso Installer](https://github.com/nxp-mcuxpresso/vscode-for-mcux/wiki/Dependency-Installation)
 * Wizard view to import repository from remote or local GitHub or from a standalone archive (MCUXpresso SDK).
 * Wizard to import a project example from an installed repository.
@@ -18,7 +19,7 @@ For complete details follow the [wiki](https://github.com/nxp-mcuxpresso/vscode-
 * Project view displaying information about: software repository, build configurations, MCU device and memory details.
 * Project options to manage components, build, flash and debug.
 * Project context options to switch "Floating Point", "C Library", and "Debug Console" types.
-* Device tree viewer, Kconfig syntax highlighting for Zephyr support, context options to open interactive Kconfig interface (guiconfig) and integrated terminal for Zephyr based environment.
+* Device Tree viewer, Kconfig syntax highlighting for Zephyr support, context options to open interactive Kconfig interface (guiconfig) and integrated terminal for Zephyr based environment.
 * Integrated with existing VS Code support for managing files, editing facilities, source control.
 * Detailed analysis of an application image structure (Callgraph and Memory details inside Image Info viewer).
 * Various binary utilities (to create bin, hex or S-Record type of images, executable information) accessible right from the context menu of executable files.
@@ -28,6 +29,7 @@ For complete details follow the [wiki](https://github.com/nxp-mcuxpresso/vscode-
 * Dedicated Flash Programmer GUI.
 * Baremetal Heap and Stack debug viewer.
 * Integration with "Serial Monitor" extension for UART and semihosting console support.
+* Online and offline Peripherals viewer.
 * Quickstart panel view with quick access to various operations, including import project, flash programmer interface, links to documentation.
 * Integration with NXP Application Code Hub.
 * Support for Windows, Ubuntu and macOS.

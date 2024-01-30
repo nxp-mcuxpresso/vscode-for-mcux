@@ -1,5 +1,38 @@
 # MCUXpresso for VS Code Changelog
 
+## Version 1.5 (2024.01)
+
+<h3>General</h3>
+- Integration with [MCUXPresso SDK builder](https://mcuxpresso.nxp.com).
+- Ability to import repository using SSH with password protected keys.
+
+<h3>Debugger</h3>
+
+- Added online peripherals view.
+- Added jtag and speed options for PEmicro debug connection (in launch.json configuration file).
+
+<h3>Project Management</h3>
+
+- Switched to VS Code tasks for project build/clean/rebuild (for all type of repositories, except Open-CMSIS-Pack).
+- Avoided unnecessary rebuild project when no sources are modified.
+
+<h3>Zephyr</h3>
+
+- Compiler optimizations are disabled by default for debug build configuration.
+
+<h3>Analysis Tools</h3>
+
+- Image Info now shows additional tree of symbols organized by file.
+
+<h3>Application Code Hub</h3>
+
+- Cloned repository is now added to Installed Repositories view. This also offers facility to manage the repository and import available projects. All ACH cloned repositories appear under a single "Application Code Hub" root node.
+- MCUXpresso IDE and VS Code options are preselected by default in order to only lists "compatible" projects.
+
+<h3>Eclipse Project Converter</h3>
+
+- Added support for Eclipse projects containing Open-CMSIS packs.
+
 ## Version 1.4 (2023.11)
 
 <h3>Project Management</h3>
