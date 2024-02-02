@@ -3,6 +3,7 @@
 ## Version 1.5 (2024.01)
 
 <h3>General</h3>
+
 - Integration with [MCUXPresso SDK builder](https://mcuxpresso.nxp.com).
 - Ability to import repository using SSH with password protected keys.
 
