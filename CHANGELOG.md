@@ -1,5 +1,28 @@
 # MCUXpresso for VS Code Changelog
 
+## Version 1.6 (2024.02)
+
+<h3>General</h3>
+
+- List of available toolchains is now sorted from newest to oldest version.
+- Location field value is now persisted between VS Code sessions.
+
+<h3>Project Management</h3>
+
+- Ability to delete/remove multiple projects at once from Projects view.
+- Added the option to not rebuild the project when debugging.
+- Reduced the number of absolute paths from the generated JSON files. Only toolchain and repository paths have remained absolute, but they can be overridden using environment variables.
+
+<h3>Zephyr</h3>
+
+- Update repository operation now performs a pull from remote before doing `west update`.
+- Added support for importing mcuboot as a freestanding/workspace application.
+- Reverted change introduced in 1.5 that disabled optimizations by default for debug build configuration as it may result in linker errors and board configuration files being ignored. 
+
+<h3>Eclipse Project Converter</h3>
+
+- FPU options are no longer added when converting projects for non-FPU devices.
+
 ## Version 1.5 (2024.01)
 
 <h3>General</h3>
