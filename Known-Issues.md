@@ -39,11 +39,6 @@
     endif()
     ```
 
-## Project Importer
-
-* Conversion for MCUXpresso IDE projects built with redlib library type is not supported.\
-    **Workaround**: Switch MCUXpresso IDE project to Newlib or Newlib_nano library types then rebuild inside IDE. The project can be then converted.
-
 ## Views
 
 * [Projects View] For Zephyr and Open-CMSIS projects, the Memory node is not showing any data.

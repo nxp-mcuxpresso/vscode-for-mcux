@@ -1,5 +1,27 @@
 # MCUXpresso for VS Code Changelog
 
+## Version 1.7 (2024.03)
+
+<h3>General</h3>
+
+- Added Redlib library support (NXP (non-GNU) ISO C90 standard C library, with some C99 extensions).
+
+>**Note:** Redlib support only works for projects converted from MCUXpresso IDE. For imported SDK examples switching to Redlib is not supported. This will be addressed in a future release.
+
+>**Note:** Redlib is provided by the NXP Toolchain Add-on pack distributed by the MCUXpresso Installer and it comes installed on top of an Arm GNU Toolchain distribution. Be sure you have 12.3.2 or newer version of NXP Toolchain Add-on in order to have Redlib support added. Alternatively, the toolchain provided by MCUXpresso IDE can be used, which already contains Redlib support. Also, MCUXpresso SDK 2.15 or newer has to be used in order to provide integration support of Redlib.
+
+<h3>Zephyr</h3>
+
+- Added support for Zephyr Hardware Model v2.
+- Added support for Sysbuild (System build).
+- Import example wizard now shows better descriptive names for boards and templates lists.
+- Support for adding additional overlay files using CMake variables.
+- Flash Programmer writes the signed binary file in case it exists (for instance signed binaries for use with the MCUboot bootloader).
+
+<h3>Eclipse Project Converter</h3>
+
+- Conversion now supports existing MCUXpresso IDE projects created with Redlib library support.
+
 ## Version 1.6 (2024.02)
 
 <h3>General</h3>
@@ -169,7 +191,7 @@
 
 - Support for converting multiple MCUXpresso IDE projects at once.
 - Static library projects are now supported by the converter.
-- Corrected issues found when the imported project uses flags like “-imacros” or “-static”, or has optimization levels different from O0.
+- Corrected issues found when the imported project uses flags like `-imacros` or `-static`, or has optimization levels different from O0.
 - Solved wrong linker settings handling in case of multiple libraries specified in the Eclipse project.
 - Object files are now generated with the .o extension (instead .obj) to be consistent with the Eclipse project linker files.
 
