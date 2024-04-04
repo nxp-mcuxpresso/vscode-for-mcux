@@ -45,3 +45,7 @@ See [Known issues](Known-Issues.md) section for detailed list.
 ## License
 
 [NXP Software License Agreement](https://www.nxp.com/docs/en/disclaimer/LA_OPT_NXP_SW.html)
+
+## Telemetry
+
+MCUXpresso for VS Code extension uses Microsoft telemetry. This allows us to collect usage data and continuously improve the extension and user experience. Storage mechanism follows the VS Code telemetry enablement ("telemetry.telemetryLevel" setting option). Read [Microsoft Privacy Statement](https://privacy.microsoft.com/en-us/privacystatement) for more details.
