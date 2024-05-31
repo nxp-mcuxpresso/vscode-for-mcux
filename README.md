@@ -29,6 +29,7 @@ For complete details follow the [wiki](https://github.com/nxp-mcuxpresso/vscode-
 * Dedicated Flash Programmer GUI.
 * Baremetal Heap and Stack debug viewer.
 * Integration with "Serial Monitor" extension for UART and semihosting console support.
+* SWO console for monitoring debug messages transmitted using ITM.
 * Online and offline Peripherals viewer.
 * Quickstart panel view with quick access to various operations, including import project, flash programmer interface, links to documentation.
 * Integration with NXP Application Code Hub.

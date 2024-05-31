@@ -1,5 +1,21 @@
 # MCUXpresso for VS Code Changelog
 
+## Version 1.9 (2024.05)
+
+<h3>General</h3>
+ 
+- Added support to work with Python virtual environment.
+- Added "Report MCUXpresso for VS Code issue" button in Quickstart Panel view.
+ 
+<h3>Zephyr</h3>
+ 
+- Fixed overlay file support on Hardware Model v2.
+- Improved the data loading speed in DeviceTree viewer.
+ 
+<h3>Debugger</h3>
+ 
+- Added SWO console for monitoring debug messages transmitted using ITM.
+
 ## Version 1.7 (2024.03)
 
 <h3>General</h3>
