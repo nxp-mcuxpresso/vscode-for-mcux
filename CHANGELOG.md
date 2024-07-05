@@ -1,19 +1,42 @@
 # MCUXpresso for VS Code Changelog
 
+## Version 1.10 (2024.06)
+
+<h3>General</h3>
+
+- Added Build Configuration GUI editor.
+- Switched from using CMake kits to CMake presets.
+- Integration with MCUXpresso Security Provisioning Tool.
+- Import repository now notifies the user in case there is not enough space left on the disk.
+- Tasks are now used for importing a remote repository; all the commands issued, and their progress are now visible.
+
+<h3>Zephyr</h3>
+
+- Support for changing name, build directory, optimization level, and adding extra CMake arguments directly from the new build configuration editor.
+- Added support for populating binary blobs from NXP HAL.
+
+<h3>MCUXpresso SDK</h3>
+
+- Support for changing name, library type, debug console, floating point, and adding extra CMake arguments directly from the new build configuration editor.
+
+<h3>Eclipse Project Converter</h3>
+
+- Implemented conversion for linked libraries and projects without managed linker scripts enabled.
+
 ## Version 1.9 (2024.05)
 
 <h3>General</h3>
- 
+
 - Added support to work with Python virtual environment.
 - Added "Report MCUXpresso for VS Code issue" button in Quickstart Panel view.
- 
+
 <h3>Zephyr</h3>
- 
+
 - Fixed overlay file support on Hardware Model v2.
 - Improved the data loading speed in DeviceTree viewer.
- 
+
 <h3>Debugger</h3>
- 
+
 - Added SWO console for monitoring debug messages transmitted using ITM.
 
 ## Version 1.7 (2024.03)
@@ -55,7 +78,7 @@
 
 - Update repository operation now performs a pull from remote before doing `west update`.
 - Added support for importing mcuboot as a freestanding/workspace application.
-- Reverted change introduced in 1.5 that disabled optimizations by default for debug build configuration as it may result in linker errors and board configuration files being ignored. 
+- Reverted change introduced in 1.5 that disabled optimizations by default for debug build configuration as it may result in linker errors and board configuration files being ignored.
 
 <h3>Eclipse Project Converter</h3>
 
@@ -107,7 +130,7 @@
 <h3>Eclipse Project Converter</h3>
 
 - Fixed wrong repository information displayed when no SDK is associated with the project.
-- Fixed missing sources in a special case of excluded directories from Eclipse project. 
+- Fixed missing sources in a special case of excluded directories from Eclipse project.
 
 <h3>Zephyr</h3>
 
@@ -131,7 +154,7 @@
 
 <h3>MCUXpresso Installer Integration</h3>
 
-- Quickstart Panel -> Open MCUXpresso Installer now prompts you to install the latest version in case your local Installer version is 1.0 or older. This aims to fix an Installer issue when updating to version 1.1. 
+- Quickstart Panel -> Open MCUXpresso Installer now prompts you to install the latest version in case your local Installer version is 1.0 or older. This aims to fix an Installer issue when updating to version 1.1.
 - Quickstart Panel -> Open MCUXpresso Installer is now able to download and install on macOS and Linux.
 
 <h3>Open-CMSIS-Pack</h3>

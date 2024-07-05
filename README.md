@@ -12,13 +12,13 @@ For complete details follow the [wiki](https://github.com/nxp-mcuxpresso/vscode-
 * Wizard view to import repository from remote or local GitHub or from a standalone archive (MCUXpresso SDK).
 * Wizard to import a project example from an installed repository.
 * Support for importing all application types for Zephyr (repository, workspace, freestanding).
-* Integration with standalone MCUXpresso Config Tools.
+* Integration with standalone MCUXpresso Config Tools and MCUXpresso SEC Security Tool.
 * Option to import an existing CMake project.
 * Support for importing existing executables.
 * Project converter from MCUXpresso IDE (Eclipse) to MCUXpresso for VS Code extension. 
 * Project view displaying information about: software repository, build configurations, MCU device and memory details.
 * Project options to manage components, build, flash and debug.
-* Project context options to switch "Floating Point", "C Library", and "Debug Console" types.
+* Build configuration GUI editor.
 * Device Tree viewer, Kconfig syntax highlighting for Zephyr support, context options to open interactive Kconfig interface (guiconfig) and integrated terminal for Zephyr based environment.
 * Integrated with existing VS Code support for managing files, editing facilities, source control.
 * Detailed analysis of an application image structure (Callgraph and Memory details inside Image Info viewer).
@@ -35,13 +35,9 @@ For complete details follow the [wiki](https://github.com/nxp-mcuxpresso/vscode-
 * Integration with NXP Application Code Hub.
 * Support for Windows, Ubuntu and macOS.
 
-## Changelog
-
-See [Changelog](CHANGELOG.md) section for detailed list.
-
 ## Known issues
 
-See [Known issues](Known-Issues.md) section for detailed list.
+See [Known issues](https://github.com/nxp-mcuxpresso/vscode-for-mcux/blob/main/Known-Issues.md) section for detailed list.
 
 ## License
 
