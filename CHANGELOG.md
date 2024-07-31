@@ -1,5 +1,25 @@
 # MCUXpresso for VS Code Changelog
 
+## Version 24.7
+
+<h3>General</h3>
+
+- Extension versioning schema changed to YY.MM.build_number.
+- Sped up LinkServer debug probe discovery.
+- Improved error handling on Application Code Hub when there is no internet connection.
+- Fixed empty shown nodes (instead source file path) for some symbols on Image Info - File section.
+- Fixed some scenarios where spaces inside paths produce failures in calling system commands.
+
+<h3>Zephyr</h3>
+
+- Sysbuild option is enabled automatically if required by the example.
+
+## Version 1.10.128 hotfix
+
+<h3>General</h3>
+
+- Some projects are not successfully converted from CMake kits to CMake presets.
+
 ## Version 1.10 (2024.06)
 
 <h3>General</h3>
