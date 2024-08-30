@@ -1,5 +1,16 @@
 # MCUXpresso for VS Code Changelog
 
+## Version 24.8
+
+<h3>General</h3>
+
+- Added file support in Project View.
+- CMake presets are no longer duplicated when editing custom build configurations.
+
+<h3>Zephyr</h3>
+
+- Added "Associate Repository" option for Zephyr projects.
+
 ## Version 24.7
 
 <h3>General</h3>

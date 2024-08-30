@@ -38,7 +38,3 @@
         set(DEBUG_CONSOLE_CONFIG "-DSDK_DEBUGCONSOLE=1" PARENT_SCOPE)
     endif()
     ```
-
-## Views
-
-* [Projects View] For Zephyr and Open-CMSIS projects, the Memory node is not showing any data.
