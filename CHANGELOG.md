@@ -1,5 +1,11 @@
 # MCUXpresso for VS Code Changelog
 
+## Version 24.8 hotfix
+
+<h3>General</h3>
+
+- Fixed build errors not appearing in Problems view.
+
 ## Version 24.8
 
 <h3>General</h3>
