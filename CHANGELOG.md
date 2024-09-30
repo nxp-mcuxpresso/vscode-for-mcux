@@ -1,5 +1,26 @@
 # MCUXpresso for VS Code Changelog
 
+## Version 24.9
+
+<h3>Project Management</h3>
+
+- It is now possible to stop the build process ("Cancel" button while building).
+- Added "Open CMake presets" button option in "Build Configuration" window for users seeking to add advanced build options.
+- Added progress bar when importing projects (useful for large projects).
+
+<h3>MCUXpresso SDK</h3>
+
+- Added device "Change package" toolbar entry in Projects View - MCU node.
+
+<h3>Installed Repositories</h3>
+
+- Added option to retry west init/update operation in case of repository installation failures.
+- Unregister repository ("Remove Repository from Workspace") added in the repository context menu.
+
+<h3>General</h3>
+
+- Drag and drop file support from Project View (or VS Code File Explorer) to Image Info.
+
 ## Version 24.8 hotfix
 
 <h3>General</h3>
