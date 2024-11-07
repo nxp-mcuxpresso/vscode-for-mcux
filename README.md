@@ -16,14 +16,14 @@ For complete details follow the [wiki](https://github.com/nxp-mcuxpresso/vscode-
 * Option to import an existing CMake project.
 * Support for importing existing executables.
 * Project converter from MCUXpresso IDE (Eclipse) to MCUXpresso for VS Code extension. 
-* Project view displaying information about: software repository, build configurations, MCU device and memory details.
+* Project view displaying information about: software repository, build configurations, MCU device.
 * Project options to manage components, build, flash and debug.
 * Build configuration GUI editor.
 * Device Tree viewer, Kconfig syntax highlighting for Zephyr support, context options to open interactive Kconfig interface (guiconfig) and integrated terminal for Zephyr based environment.
 * Integrated with existing VS Code support for managing files, editing facilities, source control.
-* Detailed analysis of an application image structure (Callgraph and Memory details inside Image Info viewer).
+* Detailed analysis of an application image structure (Callgraph, Memory and Files details inside Image Info viewer).
 * Various binary utilities (to create bin, hex or S-Record type of images, executable information) accessible right from the context menu of executable files.
-* Single/multi core [ARM Cortex-M] debug support relying on Microsoft's "C/C++" extension.
+* Single/multi core [ARM Cortex-M] debug support relying on own debug adapter based on the popular Cortex-Debug solution.
 * Debug support for J-Link, LinkServer and PEmicro probes with detection for available connected devices.
 * Support for LPC, Kinetis microcontrollers and i.MX RT crossover processors.
 * Dedicated Flash Programmer GUI.

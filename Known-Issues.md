@@ -2,18 +2,7 @@
 
 ## Debug
 
-* For older created projects, due to newest toolchain (12.x) update, starting a debug session might be very slow.\
-   **Workaround** Add the following option to your launch.json file:
-    ```
-    "setupCommands": [
-        {
-          "text": "set debug-file-directory"
-        }
-    ]
-    ```
-
-* The program execution sometimes stops before main when starting debug session.\
-    **Workaround** Resume application, it will then stop at main.
+* In the current version, there is no dedicated extra Debug RTOS view, except for the Call Stack thread awareness capability.
 
 * Semihosting support might not work for older SDK versions. If this is the case, please check mcux_config.cmake file inside your SDK (for standalone SDK in: tools/cmake_toolchain_files, for GitHub SDK in core/tools/cmake_toolchain_files) and:
     - remove --specs=rdimon.specs (remove _"set(SPECS "--specs=rdimon.specs" PARENT_SCOPE)"_ line)

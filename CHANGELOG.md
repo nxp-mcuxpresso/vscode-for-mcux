@@ -1,5 +1,21 @@
 # MCUXpresso for VS Code Changelog
 
+## Version 24.10
+
+<h3>Debugger</h3>
+
+- Migrated from Microsoft C/C++ Debug Adapter to own solution based on the popular Cortex-Debug solution. Existing projects are automatically migrated to the new debug adapter.
+- Support for hardware breakpoints.
+- Integrated Memory Inspector extension from Eclipse CDT Cloud.
+- Fixed run control options on multicore debugging.
+- Debugger now stops at main symbol, overcoming the scenario in which additional "Continue" was necessary to reach main().
+- Ability to load extra image files or symbol files to a debug session.
+
+<h3>General</h3>
+
+- Added "Duplicate" option for build configuration.
+- Provide better filtering/searching on Open-CMSIS-Pack remote packs list.
+
 ## Version 24.9
 
 <h3>Project Management</h3>
