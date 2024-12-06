@@ -1,5 +1,26 @@
 # MCUXpresso for VS Code Changelog
 
+## Version 24.11 Preview
+
+Added preliminary support for [MCUXpresso SDK version 24.12](https://github.com/nxp-mcuxpresso/mcuxsdk-manifests). The SDK will be available in January 2025.
+
+<h3>General</h3>
+
+- Added New Project Wizard for Zephyr and MCUXPressso SDK based projects.
+- Added Binary Utilities option in Projects view context menu.
+
+<h3>Debugger</h3>
+
+- Added Refresh button in Variables, Watch and Live Watch views.
+- Added option to set the --override option when invoking LinkServer.
+- Memory view has now ASCII option enabled by default.
+- Fixed variable support inside debug configuration file (launch.json).
+- Fixed unexpected context switch to secondary core once primary core is resumed.
+
+<h3>Zephyr</h3>
+
+- Fixed import for existing Zephyr projects.
+
 ## Version 24.10
 
 <h3>Debugger</h3>

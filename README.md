@@ -15,6 +15,7 @@ For complete details follow the [wiki](https://github.com/nxp-mcuxpresso/vscode-
 * Integration with standalone MCUXpresso Config Tools and MCUXpresso SEC Security Tool.
 * Option to import an existing CMake project.
 * Support for importing existing executables.
+* New project wizard support for Zephyr and MCUXpresso SDK based projects.
 * Project converter from MCUXpresso IDE (Eclipse) to MCUXpresso for VS Code extension. 
 * Project view displaying information about: software repository, build configurations, MCU device.
 * Project options to manage components, build, flash and debug.
