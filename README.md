@@ -6,7 +6,7 @@ For complete details follow the [wiki](https://github.com/nxp-mcuxpresso/vscode-
 
 ## Overview:
 
-* Support MCUXpresso SDK, Zephyr and Open-CMSIS-Pack software repositories integration.
+* Support MCUXpresso SDK, Zephyr, Open-CMSIS-Pack and Matter software repositories integration.
 * Integration with [MCUXPresso SDK builder](https://mcuxpresso.nxp.com).
 * Dependency tools and software components can be installed using [MCUXpresso Installer](https://github.com/nxp-mcuxpresso/vscode-for-mcux/wiki/Dependency-Installation)
 * Wizard view to import repository from remote or local GitHub or from a standalone archive (MCUXpresso SDK).

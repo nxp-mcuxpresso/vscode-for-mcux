@@ -1,5 +1,12 @@
 # MCUXpresso for VS Code Changelog
 
+## Version 24.12
+
+<h3>General</h3>
+
+- Added support for Matter (full support for NXP downstream of the Matter repository v1.4.0).
+- Added automatic device detection/checks for CMSIS-DAP based debug probes with target information available.
+
 ## Version 24.11 Preview
 
 Added preliminary support for [MCUXpresso SDK version 24.12](https://github.com/nxp-mcuxpresso/mcuxsdk-manifests). The SDK will be available in January 2025.
