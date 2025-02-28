@@ -10,7 +10,7 @@ For complete details follow the [wiki](https://github.com/nxp-mcuxpresso/vscode-
 * Integration with [MCUXPresso SDK builder](https://mcuxpresso.nxp.com).
 * Dependency tools and software components can be installed using [MCUXpresso Installer](https://github.com/nxp-mcuxpresso/vscode-for-mcux/wiki/Dependency-Installation)
 * Wizard view to import repository from remote or local GitHub or from a standalone archive (MCUXpresso SDK).
-* Wizard to import a project example from an installed repository.
+* Wizard to import a project example from an imported repository.
 * Support for importing all application types for Zephyr (repository, workspace, freestanding).
 * Integration with standalone MCUXpresso Config Tools and MCUXpresso SEC Security Tool.
 * Option to import an existing CMake project.
@@ -30,6 +30,8 @@ For complete details follow the [wiki](https://github.com/nxp-mcuxpresso/vscode-
 * Dedicated Flash Programmer GUI.
 * Baremetal Heap and Stack debug viewer.
 * Integration with "Serial Monitor" extension for UART and semihosting console support.
+* Integration with "Memory Inspector" extension from Eclipse CDT Cloud.
+* RTOS dedicated view for Threads/Tasks monitoring on Zephyr and FreeRTOS.
 * SWO console for monitoring debug messages transmitted using ITM.
 * Online and offline Peripherals viewer.
 * Quickstart panel view with quick access to various operations, including import project, flash programmer interface, links to documentation.
