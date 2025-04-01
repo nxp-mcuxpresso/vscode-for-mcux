@@ -1,5 +1,29 @@
 # MCUXpresso for VS Code Changelog
 
+## Version 25.03
+
+### General
+
+- Now is possible to build MCUXpresso for VS Code projects directly from the context menu, in "Explorer" view.
+- Removed Open-CMSIS-Pack support.
+- Fixed unexpected overwrite of CMake Preset toolchainFile setting.
+- Import Repository wizard allows the user to select from the west manifest files available in the remote repository.
+
+### Zephyr
+
+- Added integration support for Zephyr application on Application Code Hub.
+- Added support for semihosting debug console.
+- No longer create '_repo_' symlink for "in repository" example`.
+
+### MCUXpresso SDK
+
+- Added support to generate freestanding projects for MCUXpresso SDK 25.03 or newer.
+
+### Debugger
+
+- Show progress of flash operations.
+- Fixed instruction stepping through the secure/non-secure transition code.
+
 ## Version 25.02
 
 ### Zephyr
