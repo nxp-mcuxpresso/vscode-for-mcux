@@ -1,5 +1,26 @@
 # MCUXpresso for VS Code Changelog
 
+## Version 25.05
+
+### General
+- Enhanced integration with the MCUXpresso Installer: the extension now automatically offers to install any missing or outdated dependency tools.
+- Users are now notified that a restart of VS Code is required to apply PATH changes made during dependency tool installation.
+- Introduced multi-selection support in the Image Info view.
+- Added a new setting to specify a custom version of the Secure Provisioning Tool distribution.
+- Fixed CMakeUserPresets.json presets usage.
+- Fixed semihost printf/scanf for float numbers on NewlibNano usage when converting a project from MCUXpresso IDE.
+
+### Zephyr
+- Introduced support for installing the NXP Zephyr repository, including compatibility with additional ZSDK boards.
+
+### Matter
+- The .matter file is now forcefully regenerated before building a project if the ZAP tool was used to modify the configuration.
+
+### Debugger
+- Added a "Refresh" option to RTOS & Peripherals views.
+- Fixed state column showing wrong values on RTOS viewer for Zephyr 4.x version.
+- The RTOS and Peripherals views now read memory only when they are visible.
+
 ## Version 25.03
 
 ### General
