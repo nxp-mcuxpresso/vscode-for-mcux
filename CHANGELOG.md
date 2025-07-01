@@ -1,5 +1,26 @@
 # MCUXpresso for VS Code Changelog
 
+## Version 25.06
+
+### MCUXpresso SDK
+- Introduced support for multicore freestanding projects compatible with MCUXpresso SDK version 25.06.
+- Integrated compatibility with GNU Arm Toolchain 14.2.Rel1.
+- Added support for Ubuntu 24.04.
+- Resolved an exception in the Import Project view when selecting the KW47-EVK board with MCUXpresso SDK v25.06.00-pvw2.
+
+## Zephyr
+- Enabled support for out-of-tree board configurations.
+- Enhanced Terminal (shell) console experience: now supports full console flow, including Terminal launch from repository or project context, Python virtual environment activation, and direct access to west commands.
+
+## Matter
+- Migrated build system from GN to CMake, now compatible with Matter 1.4.0.2, MCUXpresso SDK 25.03, and GNU Arm Toolchain 13.x.
+
+## Debugger
+- Added SWO (ITM) trace support for the MCXE31x family.
+
+## General
+- Corrected project conversion from MCUXpresso IDE to MCUXpresso VS Code when the ${ProjDirPath} variable is used to reference the linker script.
+
 ## Version 25.05
 
 ### General
