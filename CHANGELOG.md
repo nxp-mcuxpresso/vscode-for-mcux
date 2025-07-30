@@ -1,5 +1,22 @@
 # MCUXpresso for VS Code Changelog
 
+## Version 25.07
+
+### General
+- Enhanced performance of the Source Control view for west based repositories.
+
+### Project Management
+- Ability to change project name.
+- Resolved an issue that occurred when multiple CMake variables were specified in the CMake Extra Args field within the Build Configuration view.
+
+### Debugger
+- Added support for probe-specific GDB server debug attributes, configurable via "launch.json".
+
+### Zephyr
+- Synced with the Zephyr v4.2 release.
+- Optimized data loading performance in the Device Tree viewer.
+- Introduced the ability to fetch peripheral register files using the MCUXpresso SDK GitHub repository as the data source.
+
 ## Version 25.06
 
 ### MCUXpresso SDK
@@ -8,18 +25,24 @@
 - Added support for Ubuntu 24.04.
 - Resolved an exception in the Import Project view when selecting the KW47-EVK board with MCUXpresso SDK v25.06.00-pvw2.
 
-## Zephyr
+### Zephyr
 - Enabled support for out-of-tree board configurations.
 - Enhanced Terminal (shell) console experience: now supports full console flow, including Terminal launch from repository or project context, Python virtual environment activation, and direct access to west commands.
 
-## Matter
+### Matter
 - Migrated build system from GN to CMake, now compatible with Matter 1.4.0.2, MCUXpresso SDK 25.03, and GNU Arm Toolchain 13.x.
 
-## Debugger
+### Debugger
 - Added SWO (ITM) trace support for the MCXE31x family.
 
-## General
+### General
 - Corrected project conversion from MCUXpresso IDE to MCUXpresso VS Code when the ${ProjDirPath} variable is used to reference the linker script.
+
+## Version 25.05 hotfix
+
+### General
+- Resolved compatibility issues with the latest MCUXpresso Installer.
+- MCUXpresso Installer integration is disabled by default. To enable it, navigate to Settings -> Extensions -> MCUXpresso for VS Code -> Enable MCUXpresso Installer Integration.
 
 ## Version 25.05
 
@@ -45,26 +68,32 @@
 ## Version 25.03
 
 ### General
-
 - Now is possible to build MCUXpresso for VS Code projects directly from the context menu, in "Explorer" view.
 - Removed Open-CMSIS-Pack support.
 - Fixed unexpected overwrite of CMake Preset toolchainFile setting.
 - Import Repository wizard allows the user to select from the west manifest files available in the remote repository.
 
 ### Zephyr
-
 - Added integration support for Zephyr application on Application Code Hub.
 - Added support for semihosting debug console.
-- No longer create '_repo_' symlink for "in repository" example`.
+- No longer create '\_repo\_' symlink for "in repository" example.
 
 ### MCUXpresso SDK
-
 - Added support to generate freestanding projects for MCUXpresso SDK 25.03 or newer.
 
 ### Debugger
-
 - Show progress of flash operations.
 - Fixed instruction stepping through the secure/non-secure transition code.
+
+## Version 25.02 hotfix
+
+### Zephyr
+
+- Subsequent debug and flash operations fail after changing the board.
+
+### General
+
+- (macOS) Python SSL certificates update notification never goes away.
 
 ## Version 25.02
 
