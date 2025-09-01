@@ -6,12 +6,13 @@ For complete details follow the [wiki](https://github.com/nxp-mcuxpresso/vscode-
 
 ## Overview:
 
-* Support MCUXpresso SDK, Zephyr, Open-CMSIS-Pack and Matter software repositories integration.
-* Integration with [MCUXPresso SDK builder](https://mcuxpresso.nxp.com).
+* Support MCUXpresso SDK, Zephyr, and Matter software repositories integration.
+* Integration with [MCUXpresso SDK builder](https://mcuxpresso.nxp.com).
 * Dependency tools and software components can be installed using [MCUXpresso Installer](https://github.com/nxp-mcuxpresso/vscode-for-mcux/wiki/Dependency-Installation)
 * Wizard view to import repository from remote or local GitHub or from a standalone archive (MCUXpresso SDK).
 * Wizard to import a project example from an imported repository.
 * Support for importing all application types for Zephyr (repository, workspace, freestanding).
+* Support for importing all application types for MCUXpresso SDK 25.03 or newer (repository, freestanding).
 * Integration with standalone MCUXpresso Config Tools and MCUXpresso SEC Security Tool.
 * Option to import an existing CMake project.
 * Support for importing existing executables.

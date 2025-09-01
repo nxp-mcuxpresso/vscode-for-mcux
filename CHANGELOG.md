@@ -1,5 +1,13 @@
 # MCUXpresso for VS Code Changelog
 
+## Version 25.08
+
+### General
+- Support for adding files to the project via drag-and-drop or context menu, with automatic updates to the CMakeLists.txt. This functionality is marked as experimental and is disabled by default. To enable it, navigate to Settings -> Extensions -> MCUXpresso for VS Code -> Enable Add Files To Project.
+- IntelliSense responsiveness has been significantly enhanced for MCUXpresso projects.
+- When importing a repository, tags and branches are now displayed in separate, clearly defined sections for better navigation and selection.
+- SDK versions are now shown when importing examples from a repository.
+
 ## Version 25.07
 
 ### General
