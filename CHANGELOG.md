@@ -1,5 +1,10 @@
 # MCUXpresso for VS Code Changelog
 
+## Version 25.08 HotFix
+
+### General
+- Resolved issue where some users encountered a "Not Implemented" error on their machines.
+
 ## Version 25.08
 
 ### General
