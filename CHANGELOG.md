@@ -1,5 +1,19 @@
 # MCUXpresso for VS Code Changelog
 
+## Version 25.09
+
+### General
+- A warning is now triggered on Windows systems when the build path exceeds 260 characters, helping to prevent unexpected build errors.
+- Added support for building custom configurations defined in example.yml.
+- Fixed an issue where variables inside miscellaneous compiler flags were incorrectly expanded during project conversion from MCUXpresso IDE.
+- Integration with latest MCUXpresso Configuration Tools handling MCUXpresso SDK v25.09 or newer.
+- Fixed overlay name when added from Device Tree view for some particular cases of boards with multiple device revisions.
+
+### Terminal
+- Fixed the terminal environment by setting ARMGCC_DIR variable path to toolchain.
+- Python virtual environment is now set to Matter venv for Matter environment (instead extension defined venv).
+- Handle paths with spaces.
+
 ## Version 25.08 HotFix
 
 ### General
