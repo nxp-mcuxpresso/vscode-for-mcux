@@ -1,5 +1,10 @@
 # MCUXpresso for VS Code Changelog
 
+## Version 25.09 HotFix
+
+### General
+- Fixed Import Archive behavior in case of corrupted or invalid project archives.
+
 ## Version 25.09
 
 ### General
