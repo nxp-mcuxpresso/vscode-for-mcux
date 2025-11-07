@@ -1,5 +1,19 @@
 # MCUXpresso for VS Code Changelog
 
+## Version 25.11
+
+### General
+- Introduced the ability to specify the project configuration files inside the "Build Configuration" view.
+- The "Update Repository" action is now executed as an independent VS Code task, providing better progress tracking and offering more details about the steps performed during the update operation.
+- Added a "Debug Configurations" virtual node under the Projects view, for easier management of MCUXpresso debug configurations defined inside `launch.json`.
+- The MCUXpresso-specific Settings page allows specifying path-like settings using a "Browse..." button.
+
+### Matter
+- Introducing Matter alignment with MCUXpresso SDK architecture and NXP support for Matter 1.4.2 version.
+
+### Debugger
+- Added possibility to configure the default debug interface (JTAG or SWD) to be used during J-Link and PEmicro debug sessions. Flash Programmer view also preselects the flash programming interface according to "Default Debug Interface" configuration setting.
+
 ## Version 25.09 HotFix
 
 ### General
