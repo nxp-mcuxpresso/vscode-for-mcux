@@ -1,5 +1,28 @@
 # MCUXpresso for VS Code Changelog
 
+## Version 25.12
+
+### General
+- Migrated product documentation to: [https://mcuxpresso.nxp.com/mcux-vscode](https://mcuxpresso.nxp.com/mcux-vscode).
+- Integrated with MCUXpresso Config Tools 25.12 for device configuration and code generation, supporting MCUXpresso SDK 25.12 and later.
+- Added new ways to associate a toolchain with a project (accessible via Command Palette and project's Configure context-menu).
+- Fixed issue where New Project Wizard (NPW) did not list all devices because the newest SDK wasn't taken in consideration.
+- Resolved error occurring when Kconfig GUI Configuration was opened multiple times consecutively.
+- "Open Kconfig GUI Configuration" now asks for domain for sysbuild enabled applications.
+
+### MCUXpresso SDK
+- Added Manage Components feature for projects using MCUXpresso SDK 24.12 or newer.
+- Enabled integration for Import Remote Archive packages with MCUXpresso SDK 25.12 and later.
+- Introduced the ability to import example projects as standalone projects. Supported by MCUXpresso SDK v25.12 and newer.
+
+### Debug
+- Added "Clean-up Debug" action inside the "Probes" view and Command Palette. It can be used to kill stale debug-related processes.
+- Fixed issue when dealing with TrustZone-specific projects, causing an error when attempting to start a debug session.
+
+### Experimental (Can be enabled from MCUXpresso for VS Code Settings)
+- Enhanced the "Projects" view with the ability to manage files in a project. The `CMakeLists.txt` can be optionally updated, according to user input.
+- The recommended toolchain or Zephyr SDK associated to a repository is automatically checked against the project's configuration during Build actions. Automatic installation of recommended toolchain is also possible.
+
 ## Version 25.11
 
 ### General
@@ -41,7 +64,7 @@
 ## Version 25.08
 
 ### General
-- Support for adding files to the project via drag-and-drop or context menu, with automatic updates to the CMakeLists.txt. This functionality is marked as experimental and is disabled by default. To enable it, navigate to Settings -> Extensions -> MCUXpresso for VS Code -> Enable Add Files To Project.
+- Enabled drag and drop functionality for adding source files to projects. This functionality is marked as experimental and is disabled by default. To enable it, navigate to Settings -> Extensions -> MCUXpresso for VS Code -> Enable Add Files To Project.
 - IntelliSense responsiveness has been significantly enhanced for MCUXpresso projects.
 - When importing a repository, tags and branches are now displayed in separate, clearly defined sections for better navigation and selection.
 - SDK versions are now shown when importing examples from a repository.
