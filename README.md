@@ -2,13 +2,13 @@
 
 The NXP's MCUXpresso for VS Code extension makes NXP devices (based on ARM Cortex-M cores) easy to use right from Microsoft Visual Studio Code environment.
 
-For complete details follow the [wiki](https://github.com/nxp-mcuxpresso/vscode-for-mcux/wiki) section.
+For complete details follow the [documentation](https://mcuxpresso.nxp.com/mcux-vscode/latest/html/index.html) section.
 
 ## Overview:
 
 * Support MCUXpresso SDK, Zephyr, and Matter software repositories integration.
 * Integration with [MCUXpresso SDK builder](https://mcuxpresso.nxp.com).
-* Dependency tools and software components can be installed using [MCUXpresso Installer](https://github.com/nxp-mcuxpresso/vscode-for-mcux/wiki/Dependency-Installation)
+* Dependency tools and software components can be installed using [MCUXpresso Installer](https://mcuxpresso.nxp.com/mcux-vscode/latest/html/MCUXpresso-Installer.html)
 * Wizard view to import repository from remote or local GitHub or from a standalone archive (MCUXpresso SDK).
 * Wizard to import a project example from an imported repository.
 * Support for importing all application types for Zephyr (repository, workspace, freestanding).
