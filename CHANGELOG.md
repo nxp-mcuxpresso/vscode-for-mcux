@@ -1,5 +1,17 @@
 # MCUXpresso for VS Code Changelog
 
+## Version 26.01
+
+### General
+- Resolved an issue where projects without a `.vscode` folder could not be imported.
+- Fixed an issue affecting debug operation for standalone projects because of incorrect MCU details stored in project settings.
+- Fixed an issue that could have made projects removal from workspace fail, especially in CI/CD environments.
+- Added "Reveal in File Explorer" and "Open in Integrated Terminal" context menu actions for installed debug solutions in the Debug Probes view.
+- Introduced detailed progress reporting notifications to clearly indicate the actions executed while establishing a debug session.
+- The Import Project wizard is now able to identify and list all project types identified in a given path, allowing users to select the appropriate project type to import.
+- Fixed an issue where changes made in MCUXpresso Config Tools are not applied to projects having associated a single core device.
+- When importing (or updating) a Zephyr repository version 4.2 or later, the "nxp_hal" module requires explicit user acceptance of its license. A notification directing users to the actual import repository terminal is shown so that the license can be accepted or rejected.
+
 ## Version 25.12
 
 ### General
