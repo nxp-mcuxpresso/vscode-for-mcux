@@ -1,5 +1,10 @@
 # MCUXpresso for VS Code Changelog
 
+## Version 26.01 HotFix
+
+### Zephyr
+- Resolved integration issue with the upstream main branch.
+
 ## Version 26.01
 
 ### General
